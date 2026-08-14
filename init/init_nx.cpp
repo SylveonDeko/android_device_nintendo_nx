@@ -51,4 +51,15 @@ void vendor_load_properties()
 		ti.property_set("ro.product.vendor.model", ti.property_get("ro.product.model"));
 		ti.property_set("ro.product.vendor.manufacturer", ti.property_get("ro.product.manufacturer"));
 	}
+
+	if (ti.vendor_context()) {
+		std::string perfmgr_suffix;
+		if (ti.is_model("sif") || ti.is_model("modin") ||
+		    ti.is_model("fric") || ti.is_model("vali"))
+			perfmgr_suffix += ".t210b01";
+		if (ti.property_get("ro.hardware.vulkan") == "nouveau")
+			perfmgr_suffix += ".nouveau";
+
+		ti.property_set("vendor.powerhal.config", "powerhint" + perfmgr_suffix + ".json");
+	}
 }

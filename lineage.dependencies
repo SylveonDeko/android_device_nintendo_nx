@@ -1,7 +1,7 @@
 [
   {
    "type": "kernel",
-   "version": "6.12"
+   "version": "mainline"
  },
  {
    "repository": "android_device_nvidia_t210-common",
@@ -10,14 +10,6 @@
  {
    "repository": "android_hardware_nintendo_arm-trusted-firmware",
    "target_path": "hardware/nintendo/arm-trusted-firmware"
- },
- {
-   "repository": "android_hardware_nintendo_joycond",
-   "target_path": "hardware/nintendo/joycond"
- },
- {
-   "repository": "android_kernel_nvidia_exfat",
-   "target_path": "kernel/nvidia/exfat"
  },
  {
    "repository": "android_hardware_intel_sensors-iio",
@@ -32,20 +24,16 @@
    "target_path": "hardware/nvidia/light"
  },
  {
-   "repository": "android_hardware_nvidia_platform_t210_nx",
-   "target_path": "hardware/nvidia/platform/t210/nx"
- },
- {
    "repository": "android_hardware_nvidia_power",
    "target_path": "hardware/nvidia/power"
  },
  {
-   "repository": "android_hardware_nvidia_thermal",
-   "target_path": "hardware/nvidia/thermal"
+   "repository": "android_kernel_nvidia_tegra-build",
+   "target_path": "kernel/platform/kernel-mainline/vendor/nvidia/tegra"
  },
  {
-   "repository": "android_kernel_nvidia_tegra-build",
-   "target_path": "kernel/platform/kernel-6.12/vendor/nvidia/tegra"
+   "repository": "android_external_libdisplay-info-upstream",
+   "target_path": "external/libdisplay-info-upstream"
  },
  {
    "repository": "android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-gnu-9.3",

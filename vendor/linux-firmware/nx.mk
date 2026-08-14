@@ -19,15 +19,13 @@ COMMON_BCM_PATH := vendor/nvidia/common/rel-shield-r/bcm
 NX_BCM_PATH := vendor/nintendo/nx/rel-shield-r/bcm
 NX_BCM_EXTERNAL_PATH := vendor/nintendo/nx/external/bcm
 
-include device/nvidia/tegra-common/vendor/$(TARGET_TEGRA_FIRMWARE_BRANCH)/bcm/bcm4356.mk
-
 PRODUCT_COPY_FILES += \
-    $(NX_BCM_PATH)/bcm4356/brcmfmac4356-pcie.clm_blob:$(TARGET_COPY_OUT_VENDOR)/firmware/brcmfmac4356-pcie.clm_blob \
-    $(NX_BCM_EXTERNAL_PATH)/bcm4356/brcmfmac4356A3-pcie.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/brcmfmac4356-pcie.nvidia,odin.txt \
-    $(NX_BCM_EXTERNAL_PATH)/bcm4356/brcmfmac4356A3-pcie.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/brcmfmac4356-pcie.nvidia,modin.txt \
-    $(NX_BCM_EXTERNAL_PATH)/bcm4356/brcmfmac4356A3-pcie.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/brcmfmac4356-pcie.nvidia,vali.txt \
-    $(NX_BCM_EXTERNAL_PATH)/bcm4356/brcmfmac4356A3-pcie.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/brcmfmac4356-pcie.nvidia,fric.txt \
-    $(NX_BCM_EXTERNAL_PATH)/bcm4356/CYW4356A3_001.004.009.0092.0095.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/BCM4356A3.hcd
-
-PRODUCT_COPY_FILES += \
-    $(COMMON_BCM_PATH)/bcm4356/brcmfmac4356-pcie.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/brcmfmac4356-pcie.bin
+    $(NX_BCM_PATH)/bcm4356/brcmfmac4356-pcie.clm_blob:$(TARGET_COPY_OUT_VENDOR)/firmware/brcm/brcmfmac4356-pcie.nvidia,odin.clm_blob \
+    $(NX_BCM_PATH)/bcm4356/brcmfmac4356-pcie.clm_blob:$(TARGET_COPY_OUT_VENDOR)/firmware/brcm/brcmfmac4356-pcie.nvidia,modin.clm_blob \
+    $(NX_BCM_PATH)/bcm4356/brcmfmac4356-pcie.clm_blob:$(TARGET_COPY_OUT_VENDOR)/firmware/brcm/brcmfmac4356-pcie.nvidia,vali.clm_blob \
+    $(NX_BCM_PATH)/bcm4356/brcmfmac4356-pcie.clm_blob:$(TARGET_COPY_OUT_VENDOR)/firmware/brcm/brcmfmac4356-pcie.nvidia,fric.clm_blob \
+    $(NX_BCM_EXTERNAL_PATH)/bcm4356/brcmfmac4356A3-pcie.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/brcm/brcmfmac4356-pcie.nvidia,odin.txt \
+    $(NX_BCM_EXTERNAL_PATH)/bcm4356/brcmfmac4356A3-pcie.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/brcm/brcmfmac4356-pcie.nvidia,modin.txt \
+    $(NX_BCM_EXTERNAL_PATH)/bcm4356/brcmfmac4356A3-pcie.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/brcm/brcmfmac4356-pcie.nvidia,vali.txt \
+    $(NX_BCM_EXTERNAL_PATH)/bcm4356/brcmfmac4356A3-pcie.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/brcm/brcmfmac4356-pcie.nvidia,fric.txt \
+    $(NX_BCM_EXTERNAL_PATH)/bcm4356/CYW4356A3_001.004.009.0092.0095.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/brcm/BCM4356A3.hcd
