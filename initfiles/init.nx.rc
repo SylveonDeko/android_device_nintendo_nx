@@ -26,6 +26,7 @@ on init
 on fs
     mount_all /vendor/etc/fstab.nx
     swapon_all /vendor/etc/fstab.nx
+    mount tmpfs tmpfs /metadata size=10m
 
 on post-fs-data
     chmod 0664 /sys/devices/57000000.gpu/devfreq/57000000.gpu/max_freq

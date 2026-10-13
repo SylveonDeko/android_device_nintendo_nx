@@ -28,6 +28,7 @@ TARGET_COPY_OUT_SYSTEM_EXT             := system_ext
 TARGET_COPY_OUT_ODM                    := odm
 TARGET_COPY_OUT_PRODUCT                := product
 TARGET_COPY_OUT_VENDOR                 := vendor
+BOARD_USES_METADATA_PARTITION          := true
 
 -include vendor/lineage/config/BoardConfigReservedSize.mk
 
