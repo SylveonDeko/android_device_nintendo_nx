@@ -93,6 +93,12 @@ PRODUCT_COPY_FILES += \
     device/nvidia/tegra-common/audio/primary_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/primary_audio_policy_configuration.xml
 endif
 
+PRODUCT_PACKAGES += \
+    tinymix2  \
+    tinypcminfo2  \
+    tinyplay2  \
+    tinycap2 \
+
 # CEC
 # PRODUCT_COPY_FILES := $(filter-out frameworks/native/data/etc/android.hardware.hdmi.cec.xml%android.hardware.hdmi.cec.xml,$(PRODUCT_COPY_FILES))
 
