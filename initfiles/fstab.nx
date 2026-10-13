@@ -21,11 +21,11 @@ product                                                 /product            ext4
 /dev/block/by-name/misc                                 /misc               emmc        defaults                                                            defaults
 
 # devices (normal)
-/devices/sdhci-tegra.0/mmc_host*                        auto                vfat        defaults                                                            voldmanaged=sdcard1:1
+/devices/700b0000.mmc/mmc_host*                         auto                vfat        defaults                                                            voldmanaged=sdcard1:1
 /devices/70090000.xusb/usb*                             auto                auto        defaults                                                            voldmanaged=usbdrive:auto
 
 # devices (recovery)
-/dev/block/platform/sdhci-tegra.0/by-num/p1             /sdcard             vfat        defaults                                                            recoveryonly
+/dev/block/platform/700b0000.mmc/by-num/p1              /sdcard             vfat        defaults                                                            recoveryonly
 /dev/block/platform/70090000.xusb/by-num/p1             /usbdrive           auto        defaults                                                            recoveryonly
 
 # zram
