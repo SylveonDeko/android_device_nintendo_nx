@@ -93,8 +93,10 @@ BOOT_KERNEL_MODULES := \
     max77620-regulator.ko \
     max77812-regulator.ko \
     max77620-restart.ko \
+    max77620-onoff.ko \
     max17042_battery.ko \
     tegra20-apb-dma.ko \
+    r2p-tegra.ko \
     phy-tegra-xusb.ko \
     xhci-tegra.ko \
     tegra-xudc.ko \
@@ -116,10 +118,10 @@ BOOT_KERNEL_MODULES := \
     drm_dp_aux_bus.ko \
     tegra-aconnect.ko \
     tegra-drm.ko \
-    panel-nx-dsi.ko \
     pwm_bl.ko \
     bm92txx.ko \
-    ftm4.ko
+    panel-nx-dsi.ko \
+    stmfts.ko
 
 # Load in first stage boot
 BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := \
@@ -139,6 +141,7 @@ BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := \
     spi-tegra210-quad \
     bq24190_charger \
     rtc-tegra \
+    r2p-tegra \
     xhci-tegra \
     tegra-xudc \
     usb-conn-gpio \
@@ -146,17 +149,18 @@ BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := \
     pwm-fan \
     tegra-soctherm \
     max77620-restart \
+    max77620-onoff \
     max17042_battery \
     tegra-aconnect \
     sdhci-tegra \
     spi-nor \
     mtdblock \
     tegra-drm \
-    panel-nx-dsi \
     pwm_bl \
     tegra30-devfreq \
     bm92txx \
-    ftm4
+    panel-nx-dsi \
+    stmfts
 
 # Copy to recovery
 RECOVERY_KERNEL_MODULES := \
