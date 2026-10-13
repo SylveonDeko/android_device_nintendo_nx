@@ -17,9 +17,11 @@
 TARGET_TEGRA_VARIANT    ?= common
 
 TARGET_KERNEL_VERSION ?= mainline
+TARGET_AUDIO_HAL      ?= mainline
 TARGET_LIGHT_HAL      ?= tegra
 
 TARGET_ATV_FORCE_1080_SCALING := false
+TARGET_AUDIO_MAINLINE_UCM_PROFILES := nx tegra-hda
 
 PRODUCT_COPY_FILES += \
     device/nintendo/nx/initfiles/ack.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ack.rc
