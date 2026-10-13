@@ -19,6 +19,9 @@ COMMON_BCM_PATH := vendor/nvidia/common/rel-shield-r/bcm
 NX_BCM_PATH := vendor/nintendo/nx/rel-shield-r/bcm
 NX_BCM_EXTERNAL_PATH := vendor/nintendo/nx/external/bcm
 
+PRODUCT_PACKAGES += \
+    linux_firmware_cypress-bcm4356
+
 PRODUCT_COPY_FILES += \
     $(NX_BCM_PATH)/bcm4356/brcmfmac4356-pcie.clm_blob:$(TARGET_COPY_OUT_VENDOR)/firmware/brcm/brcmfmac4356-pcie.nvidia,odin.clm_blob \
     $(NX_BCM_PATH)/bcm4356/brcmfmac4356-pcie.clm_blob:$(TARGET_COPY_OUT_VENDOR)/firmware/brcm/brcmfmac4356-pcie.nvidia,modin.clm_blob \
