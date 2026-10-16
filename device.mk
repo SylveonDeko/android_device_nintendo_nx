@@ -53,6 +53,10 @@ DEVICE_PACKAGE_OVERLAYS += \
     device/nintendo/nx/overlay/tablet
 endif
 
+PRODUCT_PACKAGES += \
+    FrameworksResFricOverlay \
+    FrameworksResValiOverlay
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += device/nintendo/nx
 
