@@ -49,11 +49,11 @@ on boot
 
     setprop persist.vendor.tegra.decompression cde-client
 
-    wait /sys/devices/57000000.gpu/devfreq/57000000.gpu/available_frequencies 10
-    chmod 664 /sys/devices/57000000.gpu/devfreq/57000000.gpu/min_freq
-    chown system system /sys/devices/57000000.gpu/devfreq/57000000.gpu/min_freq
-    chmod 664 /sys/devices/57000000.gpu/devfreq/57000000.gpu/available_frequencies
-    chown system system /sys/devices/57000000.gpu/devfreq/57000000.gpu/available_frequencies
+    wait /sys/class/devfreq/57000000.gpu/available_frequencies 10
+    chmod 664 /sys/class/devfreq/57000000.gpu/min_freq
+    chown system system /sys/class/devfreq/57000000.gpu/min_freq
+    chmod 664 /sys/class/devfreq/57000000.gpu/available_frequencies
+    chown system system /sys/class/devfreq/57000000.gpu/available_frequencies
     chmod 660 /sys/bus/hid/drivers/Jarvis/hid_miss_stats
     chown system system /sys/bus/hid/drivers/Jarvis/hid_miss_stats
     chmod 660 /sys/bus/hid/drivers/Jarvis/ts_joystick_stats
