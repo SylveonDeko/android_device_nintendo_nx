@@ -121,7 +121,8 @@ BOOT_KERNEL_MODULES := \
     pwm_bl.ko \
     bm92txx.ko \
     panel-nx-dsi.ko \
-    stmfts.ko
+    stmfts.ko \
+    bh1730.ko
 
 # Load in first stage boot
 BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := \
@@ -160,7 +161,8 @@ BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := \
     tegra30-devfreq \
     bm92txx \
     panel-nx-dsi \
-    stmfts
+    stmfts \
+    bh1730
 
 # Copy to recovery
 RECOVERY_KERNEL_MODULES := \

@@ -160,6 +160,11 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += persist.vendor.recovery_update=true
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 37
 
+# Sensors
+PRODUCT_COPY_FILES += \
+    device/nintendo/nx/sensors/sensors.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensors.conf \
+    frameworks/native/data/etc/android.hardware.sensor.light.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.light.xml
+
 # Thermal
 PRODUCT_COPY_FILES += \
     device/nintendo/nx/thermal/thermalhal.nx.xml:$(TARGET_COPY_OUT_VENDOR)/etc/thermalhal.nx.xml
